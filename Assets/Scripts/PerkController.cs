@@ -19,7 +19,7 @@ public class PerkController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        other.GetComponent<CapsuleController>().PowerUp();
+        // other.GetComponent<CapsuleController>().PowerUp();
         this.gameObject.SetActive(false);
     }
 
