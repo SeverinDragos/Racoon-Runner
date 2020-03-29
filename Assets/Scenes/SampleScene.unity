@@ -1253,6 +1253,8 @@ GameObject:
   - component: {fileID: 1745210627}
   - component: {fileID: 1745210626}
   - component: {fileID: 1745210625}
+  - component: {fileID: 1745210630}
+  - component: {fileID: 1745210629}
   m_Layer: 0
   m_Name: SmallerPlane
   m_TagString: Untagged
@@ -1333,6 +1335,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1745210629
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745210624}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0, y: 30, z: 15}
+  m_Center: {x: -5, y: 0, z: 0}
+--- !u!65 &1745210630
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745210624}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0, y: 30, z: 15}
+  m_Center: {x: 5, y: 0, z: 0}
 --- !u!4 &1765565826 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 408730, guid: 7737647c22c1fc64a88d5cd030c352ce,
