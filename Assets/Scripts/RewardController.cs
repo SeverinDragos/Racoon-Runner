@@ -18,6 +18,7 @@ public class RewardController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        scoreController = GameObject.FindGameObjectWithTag("Score").GetComponent<ScoreController>();
         scoreController.UpdateScore(rewardValue);
         this.gameObject.SetActive(false);
     }
