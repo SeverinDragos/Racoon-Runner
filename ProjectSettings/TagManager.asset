@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Spinner
   - Score
+  - Highscore
   layers:
   - Default
   - TransparentFX
