@@ -11,10 +11,15 @@ public class PlayerMotor : MonoBehaviour
     private float gravity = 12.0f;
     private float animationDuration = 3.0f;
 
+    public float jumpPower = 40;
+
+    private float jumpTime = 0;
+
     // Start is called before the first frame update
     void Start()
     {
         controller = GetComponent<CharacterController>();
+
     }
 
     // Update is called once per frame
@@ -47,5 +52,15 @@ public class PlayerMotor : MonoBehaviour
         moveVector.z = speed;
 
         controller.Move(moveVector * Time.deltaTime);
+
+        if (Input.GetKey(KeyCode.Space) && jumpTime > 1)
+        {
+            controller.Move(Vector3.up * jumpPower * Time.deltaTime);
+            jumpTime = 0;
+        }
+        jumpTime += Time.deltaTime;
+
+        
+            
     }
 }
