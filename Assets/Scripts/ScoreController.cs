@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ScoreController : MonoBehaviour
 {
-    public int score = 0;
+    public int score = 0;   // To be later set to visibility 'private' with getter
     private TMPro.TMP_Text text;
     public TMPro.TMP_Text highscore;
 
@@ -25,9 +25,4 @@ public class ScoreController : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
