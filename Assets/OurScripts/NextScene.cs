@@ -23,6 +23,9 @@ public class NextScene : MonoBehaviour
         PlayerPrefs.SetString("previousScene", SceneManager.GetActiveScene().name);
         // load new scene
         SceneManager.LoadScene(nextScene);
+        
+        AudioManager.instance.StopPlaying("Menu");
+        AudioManager.instance.Play("InGameMusic");
     }
 
 }

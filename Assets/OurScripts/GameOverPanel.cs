@@ -29,6 +29,8 @@ public class GameOverPanel : MonoBehaviour
         PlayerPrefs.SetInt("Score", 0);
         // load new scene
         SceneManager.LoadScene(gameScene);
+        AudioManager.instance.StopPlaying("GameOver");
+        AudioManager.instance.Play("InGameMusic");
     }
 
     // Update is called once per frame

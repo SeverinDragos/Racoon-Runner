@@ -17,6 +17,10 @@ public class ObstacleCollider : MonoBehaviour
             PlayerPrefs.SetInt("Score", scoreValue);
             // load new scene
             SceneManager.LoadScene(gameOverScene);
+
+            AudioManager.instance.StopPlaying("InGameMusic");
+            AudioManager.instance.Play("Obstacle");
+            AudioManager.instance.Play("GameOver");
         }
     }
 }
