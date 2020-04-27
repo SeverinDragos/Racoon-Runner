@@ -67,6 +67,7 @@
     <Compile Include="Assets\OurScripts\GameOverPanel.cs" />
     <Compile Include="Assets\OurScripts\NextScene.cs" />
     <Compile Include="Assets\OurScripts\ObstacleCollider.cs" />
+    <Compile Include="Assets\OurScripts\PerkController.cs" />
     <Compile Include="Assets\OurScripts\PlayerMotor.cs" />
     <Compile Include="Assets\OurScripts\RewardController.cs" />
     <Compile Include="Assets\OurScripts\ScoreController.cs" />
@@ -115,7 +116,6 @@
     <Compile Include="Assets\Scripts\Obstacles\PatrollingObstacle.cs" />
     <Compile Include="Assets\Scripts\Obstacles\SimpleBarricade.cs" />
     <Compile Include="Assets\Scripts\OpenURL.cs" />
-    <Compile Include="Assets\Scripts\PerkController.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PlayerData.cs" />
     <Compile Include="Assets\Scripts\Pooler.cs" />

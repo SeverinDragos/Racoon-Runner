@@ -242,6 +242,11 @@ MonoBehaviour:
     volume: 1
     loop: 1
     source: {fileID: 0}
+  - name: Reward
+    clip: {fileID: 8300000, guid: cbd234fef9c2d5346ba3d74cd0f0ec5e, type: 3}
+    volume: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!1 &387873280
 GameObject:
   m_ObjectHideFlags: 0
