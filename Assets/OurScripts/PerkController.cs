@@ -21,6 +21,7 @@ public class PerkController : MonoBehaviour
     {
         // other.GetComponent<CapsuleController>().PowerUp();
         this.gameObject.SetActive(false);
+        
     }
 
     private void OnTriggerExit(Collider other)

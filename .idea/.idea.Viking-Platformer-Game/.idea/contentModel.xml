@@ -26,8 +26,17 @@
         <e p="INSTRUCTIONS.txt" t="Include" />
         <e p="Link.xml" t="Include" />
         <e p="OurScripts" t="Include">
+          <e p="AudioManager.cs" t="Include" />
           <e p="CameraMotor.cs" t="Include" />
+          <e p="GameOverPanel.cs" t="Include" />
+          <e p="NextScene.cs" t="Include" />
+          <e p="ObstacleCollider.cs" t="Include" />
+          <e p="PerkController.cs" t="Include" />
+          <e p="PerkCountdown.cs" t="Include" />
           <e p="PlayerMotor.cs" t="Include" />
+          <e p="RewardController.cs" t="Include" />
+          <e p="ScoreController.cs" t="Include" />
+          <e p="Sound.cs" t="Include" />
           <e p="TileManager.cs" t="Include" />
         </e>
         <e p="Run.cs" t="Include" />
@@ -97,13 +106,10 @@
             <e p="SimpleBarricade.cs" t="Include" />
           </e>
           <e p="OpenURL.cs" t="Include" />
-          <e p="PerkController.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
           <e p="PlayerData.cs" t="Include" />
           <e p="Pooler.cs" t="Include" />
           <e p="ReseterScript.cs" t="Include" />
-          <e p="RewardController.cs" t="Include" />
-          <e p="ScoreController.cs" t="Include" />
           <e p="Sounds" t="Include">
             <e p="AssignOutputChannel.cs" t="Include" />
             <e p="CountdownSound.cs" t="Include" />
