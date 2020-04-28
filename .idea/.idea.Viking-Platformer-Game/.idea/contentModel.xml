@@ -33,6 +33,7 @@
           <e p="ObstacleCollider.cs" t="Include" />
           <e p="PerkController.cs" t="Include" />
           <e p="PerkCountdown.cs" t="Include" />
+          <e p="PerksManager.cs" t="Include" />
           <e p="PlayerMotor.cs" t="Include" />
           <e p="RewardController.cs" t="Include" />
           <e p="ScoreController.cs" t="Include" />
