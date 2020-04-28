@@ -38,6 +38,7 @@
           <e p="RewardController.cs" t="Include" />
           <e p="ScoreController.cs" t="Include" />
           <e p="Sound.cs" t="Include" />
+          <e p="SoundOnOff.cs" t="Include" />
           <e p="TileManager.cs" t="Include" />
         </e>
         <e p="Run.cs" t="Include" />

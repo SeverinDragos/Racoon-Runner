@@ -8,6 +8,9 @@ public class AudioManager : MonoBehaviour
 
     public static AudioManager instance;
 
+    public int active = 1;
+
+    private bool started = false;
     void Awake() 
     {
         if (instance == null) 
@@ -30,7 +33,12 @@ public class AudioManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Play("Menu");
+        active = PlayerPrefs.GetInt("sound");
+        if (active == 1)
+        {
+            Play("Menu");
+            started = true;
+        }
     }
 
     public void Play(string name) 
@@ -53,5 +61,22 @@ public class AudioManager : MonoBehaviour
         return;
         }
         s.source.Stop();
+    }
+
+    public void Update()
+    {
+        if (PlayerPrefs.GetInt("sound") == 0)
+        {
+            StopPlaying("Menu");
+            started = false;
+        }
+        else
+        { 
+            if (!started)
+            {
+                Play("Menu");
+                started = true;
+            }
+        }
     }
 }

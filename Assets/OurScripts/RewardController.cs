@@ -19,7 +19,8 @@ public class RewardController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        AudioManager.instance.Play("Reward");
+        if (PlayerPrefs.GetInt("sound") == 1)
+            AudioManager.instance.Play("Reward");
         scoreController = GameObject.FindGameObjectWithTag("Score").GetComponent<ScoreController>();
         if (isStarPerkActive)
             scoreController.UpdateScore(rewardValue * 2);

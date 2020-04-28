@@ -24,8 +24,10 @@ public class NextScene : MonoBehaviour
         // load new scene
         SceneManager.LoadScene(nextScene);
         
+        
         AudioManager.instance.StopPlaying("Menu");
-        AudioManager.instance.Play("InGameMusic");
+        if(PlayerPrefs.GetInt("sound")  == 1)
+            AudioManager.instance.Play("InGameMusic");
     }
 
 }

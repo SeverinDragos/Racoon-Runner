@@ -14,7 +14,8 @@ public class ObstacleCollider : MonoBehaviour
     {
         if(isInvinciblePerkActive) 
         {
-            AudioManager.instance.Play("Obstacle");
+            if (PlayerPrefs.GetInt("sound") == 1)
+                AudioManager.instance.Play("Obstacle");
             ScoreController scoreController = GameObject.FindGameObjectWithTag("Score").GetComponent<ScoreController>();
             scoreController.UpdateScore(15);
             this.gameObject.SetActive(false);
@@ -29,9 +30,12 @@ public class ObstacleCollider : MonoBehaviour
                 // load new scene
                 SceneManager.LoadScene(gameOverScene);
 
-                AudioManager.instance.StopPlaying("InGameMusic");
-                AudioManager.instance.Play("Obstacle");
-                AudioManager.instance.Play("GameOver");
+                if (PlayerPrefs.GetInt("sound") == 1)
+                {
+                    AudioManager.instance.StopPlaying("InGameMusic");
+                    AudioManager.instance.Play("Obstacle");
+                    AudioManager.instance.Play("GameOver");
+                }
             }
         }
     }
