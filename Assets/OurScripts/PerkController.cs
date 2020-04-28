@@ -19,6 +19,7 @@ public class PerkController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        PerksManager.instance.ActivateScoreMultiplierPerk();
         // other.GetComponent<CapsuleController>().PowerUp();
         this.gameObject.SetActive(false);
         

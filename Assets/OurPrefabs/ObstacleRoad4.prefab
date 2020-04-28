@@ -88,7 +88,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.3436334, y: 2.2956715, z: 5.401211}
+  m_Size: {x: 3, y: 2, z: 5}
   m_Center: {x: 0, y: 1.1470189, z: 0.00000011920929}
 --- !u!114 &5186583163834012170
 MonoBehaviour:
@@ -102,6 +102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e1eae7ce1ef3ef4584ed6b91a391193, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isInvinciblePerkActive: 0
 --- !u!1 &6222840625487111580
 GameObject:
   m_ObjectHideFlags: 0
@@ -147,7 +148,7 @@ GameObject:
   - component: {fileID: 1355816302153812914}
   m_Layer: 0
   m_Name: Rewards
-  m_TagString: Untagged
+  m_TagString: Reward
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -182,6 +183,7 @@ MonoBehaviour:
   rewardValue: 20
   rotateSpeed: 100
   scoreController: {fileID: 0}
+  isStarPerkActive: 0
 --- !u!65 &1355816302153812914
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -193,7 +195,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.5, y: 1, z: 1.5}
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &3852247393297759708
 PrefabInstance:
@@ -205,6 +207,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 38712ee56b1eed24d8f5a77d10352a98, type: 3}
       propertyPath: m_Name
       value: SkipBlue
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 38712ee56b1eed24d8f5a77d10352a98, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 38712ee56b1eed24d8f5a77d10352a98, type: 3}
       propertyPath: m_LocalPosition.x

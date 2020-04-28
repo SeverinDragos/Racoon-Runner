@@ -9,6 +9,7 @@ public class RewardController : MonoBehaviour
     public int rewardValue = 20;
     public float rotateSpeed = 100f;
     public ScoreController scoreController;
+    public bool isStarPerkActive = false;
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +21,10 @@ public class RewardController : MonoBehaviour
     {
         AudioManager.instance.Play("Reward");
         scoreController = GameObject.FindGameObjectWithTag("Score").GetComponent<ScoreController>();
-        scoreController.UpdateScore(rewardValue);
+        if (isStarPerkActive)
+            scoreController.UpdateScore(rewardValue * 2);
+        else
+            scoreController.UpdateScore(rewardValue);
         this.gameObject.SetActive(false);
     }
 

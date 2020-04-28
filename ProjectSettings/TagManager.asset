@@ -7,6 +7,9 @@ TagManager:
   - Spinner
   - Score
   - Highscore
+  - Fire
+  - Reward
+  - Obstacle
   layers:
   - Default
   - TransparentFX
