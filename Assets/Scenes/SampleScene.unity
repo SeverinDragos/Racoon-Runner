@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1710,6 +1710,12 @@ MonoBehaviour:
   - {fileID: 6222840625487111580, guid: 18102a2a905a6d44f8b7fe331bf18e43, type: 3}
   - {fileID: 2773465480880568844, guid: 3c7c5b1857b0e014abc689fa12227deb, type: 3}
   - {fileID: 6222840625487111580, guid: 750921c1450e0c8419b045b99d6469c7, type: 3}
+  - {fileID: 6222840625487111580, guid: 1c09eca006b4e0246a968b5a63fefcba, type: 3}
+  - {fileID: 2773465480880568844, guid: f176a56aded3d134fbe355c8d58f8804, type: 3}
+  - {fileID: 6222840625487111580, guid: 367863ff05a834f49941760a09fa2c09, type: 3}
+  - {fileID: 6222840625487111580, guid: 05b833eeca9976f4b832530b1f829163, type: 3}
+  - {fileID: 2773465480880568844, guid: 43f2c91d35bb0954180dc7f65296e604, type: 3}
+  - {fileID: 6222840625487111580, guid: 5918837ee7fb88b4a9fb7165d6868d90, type: 3}
   - {fileID: 6222840625487111580, guid: aebbe94e2bd34e24caf271360bb4f97c, type: 3}
 --- !u!4 &1925927169
 Transform:
