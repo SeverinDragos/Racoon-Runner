@@ -9,7 +9,7 @@ public class CameraMotor : MonoBehaviour
     private Vector3 moveVector;
     private float transition = 0.0f;
     private float animationDuration = 3.0f;
-    private Vector3 animatioOffset = new Vector3(0, 5, 5);
+    private Vector3 animationOffset = new Vector3(0, 5, 5);
 
     // Start is called before the first frame update
     void Start()
@@ -36,7 +36,7 @@ public class CameraMotor : MonoBehaviour
         else
         {
             // Animation at the start of the game
-            transform.position = Vector3.Lerp(moveVector + animatioOffset, moveVector, transition);
+            transform.position = Vector3.Lerp(moveVector + animationOffset, moveVector, transition);
             transition += Time.deltaTime * 1 / animationDuration;
             transform.LookAt(lookAt.position + Vector3.up);
         }
