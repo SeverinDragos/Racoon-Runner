@@ -6,7 +6,7 @@ public class RewardController : MonoBehaviour
 {
     Renderer Renderer;
     Transform rotator;
-    public int rewardValue = 20;
+    private int rewardValue = 10;
     public float rotateSpeed = 100f;
     public ScoreController scoreController;
     public bool isStarPerkActive = false;

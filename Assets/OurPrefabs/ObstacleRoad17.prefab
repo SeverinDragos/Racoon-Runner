@@ -138,6 +138,8 @@ MonoBehaviour:
   scaleSpeed: 0.5
   minScale: 0.5
   maxScale: 2
+  isScoreMultiplierPerk: 1
+  isInvinciblePerk: 0
 --- !u!1001 &8081336509660585872
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -10,6 +10,9 @@ public class PerkController : MonoBehaviour
     public float scaleSpeed = 0.5f;
     public float minScale = 0.5f;
     public float maxScale = 1.5f;
+    public bool isScoreMultiplierPerk = false;
+    public bool isInvinciblePerk = false;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +22,14 @@ public class PerkController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        PerksManager.instance.ActivateScoreMultiplierPerk();
+        if (isInvinciblePerk) 
+        {
+            PerksManager.instance.ActivateInvinciblePerk();    
+        }
+        if (isScoreMultiplierPerk) 
+        {
+            PerksManager.instance.ActivateScoreMultiplierPerk();    
+        }
         // other.GetComponent<CapsuleController>().PowerUp();
         this.gameObject.SetActive(false);
         

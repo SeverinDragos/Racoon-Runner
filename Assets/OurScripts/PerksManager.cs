@@ -33,7 +33,7 @@ public class PerksManager : MonoBehaviour
     {
         GameObject[] stars;
         float timePassed = 0f;
-        while (timePassed < 10) 
+        while (timePassed < 5) 
         {
             if(!countDownText.text.Contains("2x Score!\n")) 
             {
@@ -49,7 +49,6 @@ public class PerksManager : MonoBehaviour
             timePassed += Time.deltaTime;
             yield return null;
         }
-        countDownText.color = Color.green;
         countDownText.text = countDownText.text.Replace("2x Score!\n", "");
         stars = GameObject.FindGameObjectsWithTag("Reward");
         foreach (GameObject s in stars)
@@ -63,7 +62,7 @@ public class PerksManager : MonoBehaviour
     {
         GameObject[] stars;
         float timePassed = 0f;
-        while (timePassed < 10) 
+        while (timePassed < 5) 
         {
             if(!countDownText.text.Contains("Invincible!\n")) 
             {
@@ -79,7 +78,6 @@ public class PerksManager : MonoBehaviour
             timePassed += Time.deltaTime;
             yield return null;
         }
-        countDownText.color = Color.green;
         countDownText.text = countDownText.text.Replace("Invincible!\n", "");
         stars = GameObject.FindGameObjectsWithTag("Obstacle");
         foreach (GameObject s in stars)

@@ -61,6 +61,8 @@ MonoBehaviour:
   scaleSpeed: 0.5
   minScale: 0.5
   maxScale: 2
+  isScoreMultiplierPerk: 1
+  isInvinciblePerk: 0
 --- !u!65 &4930346320806067535
 BoxCollider:
   m_ObjectHideFlags: 0
