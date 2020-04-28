@@ -10,7 +10,7 @@ public class PlayerMotor : MonoBehaviour
     private float verticalVelocity = 0.0f;
     private float gravity = 20.0f;
     private float animationDuration = 3.0f;
-    private float jumpSpeed = 9.0f;
+    private float jumpSpeed = 7.5f;
 
     // Start is called before the first frame update
     void Start()
