@@ -123,7 +123,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e68340d25dc803429961232d785f34f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rewardValue: 20
   rotateSpeed: 100
   scoreController: {fileID: 0}
   isStarPerkActive: 0
@@ -279,7 +278,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 38712ee56b1eed24d8f5a77d10352a98, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.1700001
+      value: -1.79
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 38712ee56b1eed24d8f5a77d10352a98, type: 3}
       propertyPath: m_LocalRotation.x
@@ -315,15 +314,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 38712ee56b1eed24d8f5a77d10352a98, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 0.414015
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 38712ee56b1eed24d8f5a77d10352a98, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 0.414015
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 38712ee56b1eed24d8f5a77d10352a98, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.5
+      value: 0.414015
       objectReference: {fileID: 0}
     - target: {fileID: 3300000, guid: 38712ee56b1eed24d8f5a77d10352a98, type: 3}
       propertyPath: m_Mesh
@@ -404,15 +403,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 38712ee56b1eed24d8f5a77d10352a98, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 0.39461246
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 38712ee56b1eed24d8f5a77d10352a98, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 0.39461246
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 38712ee56b1eed24d8f5a77d10352a98, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.5
+      value: 0.39461246
       objectReference: {fileID: 0}
     - target: {fileID: 3300000, guid: 38712ee56b1eed24d8f5a77d10352a98, type: 3}
       propertyPath: m_Mesh

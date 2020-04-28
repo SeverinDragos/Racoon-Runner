@@ -45,7 +45,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e68340d25dc803429961232d785f34f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rewardValue: 20
   rotateSpeed: 100
   scoreController: {fileID: 0}
   isStarPerkActive: 0
@@ -735,7 +734,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e68340d25dc803429961232d785f34f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rewardValue: 20
   rotateSpeed: 100
   scoreController: {fileID: 0}
   isStarPerkActive: 0
@@ -769,7 +767,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 38712ee56b1eed24d8f5a77d10352a98, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.49
+      value: -0.9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 38712ee56b1eed24d8f5a77d10352a98, type: 3}
       propertyPath: m_LocalPosition.y
@@ -813,15 +811,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 38712ee56b1eed24d8f5a77d10352a98, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5165797
+      value: 0.35910037
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 38712ee56b1eed24d8f5a77d10352a98, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5165797
+      value: 0.35910037
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 38712ee56b1eed24d8f5a77d10352a98, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.5165797
+      value: 0.35910037
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38712ee56b1eed24d8f5a77d10352a98, type: 3}
