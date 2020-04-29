@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1676,6 +1676,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1925927169}
   - component: {fileID: 1925927168}
+  - component: {fileID: 1925927170}
   m_Layer: 0
   m_Name: TileManager
   m_TagString: Untagged
@@ -1690,7 +1691,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1925927167}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cb32ca3151b3592428c56973f10ebddf, type: 3}
   m_Name: 
@@ -1731,6 +1732,41 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1925927170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1925927167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f774bc587d73a26439dc7493e2962ce9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noRewardRoads:
+  - {fileID: 5612302528494682173, guid: 2fe732eba8f6f054584b0b1fc1bf2324, type: 3}
+  - {fileID: 6222840625487111580, guid: 622117414017c0846a87007def2d3ce9, type: 3}
+  - {fileID: 2773465480880568844, guid: 237f6af2c6169f24f8fa6dcbc9778d43, type: 3}
+  - {fileID: 2773465480880568844, guid: 2fab89da569020b44bfdf346218b0588, type: 3}
+  - {fileID: 2773465480880568844, guid: f176a56aded3d134fbe355c8d58f8804, type: 3}
+  rewardRoads:
+  - {fileID: 6222840625487111580, guid: b2c008f9f1b843f4183170567e26ad50, type: 3}
+  - {fileID: 6222840625487111580, guid: aebbe94e2bd34e24caf271360bb4f97c, type: 3}
+  - {fileID: 6222840625487111580, guid: 1d149a4b30c4c5e4cb4c4a4eed38109d, type: 3}
+  - {fileID: 6222840625487111580, guid: 6a5736fd4b8ece24ebbc6e2f072fcc4e, type: 3}
+  - {fileID: 6222840625487111580, guid: 18102a2a905a6d44f8b7fe331bf18e43, type: 3}
+  - {fileID: 6222840625487111580, guid: 367863ff05a834f49941760a09fa2c09, type: 3}
+  - {fileID: 6222840625487111580, guid: 05b833eeca9976f4b832530b1f829163, type: 3}
+  - {fileID: 6222840625487111580, guid: a3a52e6a265327b4c809f64a45764488, type: 3}
+  - {fileID: 6222840625487111580, guid: 750921c1450e0c8419b045b99d6469c7, type: 3}
+  - {fileID: 6222840625487111580, guid: 5918837ee7fb88b4a9fb7165d6868d90, type: 3}
+  perkRoads:
+  - {fileID: 9025865165077145947, guid: 3faac1dda8c6c284eac794a6d9553fa6, type: 3}
+  - {fileID: 6222840625487111580, guid: 1c09eca006b4e0246a968b5a63fefcba, type: 3}
+  - {fileID: 2773465480880568844, guid: 9c3e5f50527bbbd48b30b07e4313dbf8, type: 3}
+  - {fileID: 2773465480880568844, guid: 3c7c5b1857b0e014abc689fa12227deb, type: 3}
+  - {fileID: 2773465480880568844, guid: 43f2c91d35bb0954180dc7f65296e604, type: 3}
 --- !u!1001 &1972296550
 PrefabInstance:
   m_ObjectHideFlags: 0
