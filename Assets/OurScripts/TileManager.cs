@@ -4,30 +4,62 @@ using UnityEngine;
 
 public class TileManager : MonoBehaviour
 {
-    public GameObject[] tilePrefabs;
+
+    private enum PROBABILITIES : int
+    {
+        NO_REWARD_PROB = 30,
+        REWARD_PROB = 30,
+        MULTI_REWARD_PROB = 20,
+        PERK_PROB = 20
+    };
+
+    // Tiles lists filled from within Unity
+    public GameObject[] noRewardRoads;
+    public GameObject[] rewardRoads;
+    public GameObject[] multiRewardRoads;
+    public GameObject[] perkRoads;
+
+    public List<List<GameObject>> allTiles;
+    private Queue<GameObject> activeTiles;
+
+
+    private int[] probTreshold = new int[] {
+        (int)PROBABILITIES.NO_REWARD_PROB,
+        (int)PROBABILITIES.NO_REWARD_PROB
+            + (int)PROBABILITIES.REWARD_PROB,
+        (int)PROBABILITIES.NO_REWARD_PROB
+            + (int)PROBABILITIES.REWARD_PROB
+            + (int)PROBABILITIES.MULTI_REWARD_PROB,
+        (int)PROBABILITIES.NO_REWARD_PROB
+            + (int)PROBABILITIES.REWARD_PROB
+            + (int)PROBABILITIES.MULTI_REWARD_PROB
+            + (int)PROBABILITIES.PERK_PROB
+    };
+
     private Transform playerTransform;
     private float spawnZ = -9.0f;
     private float tileLength = 9.0f;
     private int amnTilesOnScreen = 7;
-    private List<GameObject> activeTiles;
     private float safeZone = 15.0f;
-    private int lastPrefabIndex = 0;
+    private int initialBlankRoads = 4;
 
     // Start is called before the first frame update
     void Start()
     {
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
-        activeTiles = new List<GameObject>();
-        for (int i = 0; i < amnTilesOnScreen; i++)
+        allTiles = new List<List<GameObject>>();
+        InitiateTiles();
+
+        activeTiles = new Queue<GameObject>();
+
+        for (int i = 0; i < initialBlankRoads; i ++)
         {
-            if (i < 4)
-            {
-                SpawnTile(0);
-            }
-            else
-            {
-                SpawnTile();
-            }
+            SpawnTile(true);
+        }
+
+        for (int i = initialBlankRoads; i < amnTilesOnScreen; i++)
+        {
+            SpawnTile();
         }
     }
 
@@ -36,47 +68,119 @@ public class TileManager : MonoBehaviour
     {
         if (playerTransform.position.z - safeZone > spawnZ - amnTilesOnScreen * tileLength)
         {
-            SpawnTile();
             DeleteTile();
+            SpawnTile();
         }
     }
 
-    private void SpawnTile(int prefabIndex = -1)
+    private void SpawnTile(bool emptyTile = false)
     {
         GameObject go;
-        if (prefabIndex == -1)
+        if(emptyTile)
         {
-            go = Instantiate(tilePrefabs[randomPrefabIndex()]) as GameObject;
+            go = Instantiate(noRewardRoads[0]) as GameObject;
+            go.transform.SetParent(transform);
         }
         else
         {
-            go = Instantiate(tilePrefabs[prefabIndex]) as GameObject;
+            Pair<int, int> randIndex = GetRandomIndex();
+            go = allTiles[randIndex.First][randIndex.Second];
+            while (go.activeSelf)
+            {
+                randIndex = GetRandomIndex();
+                go = allTiles[randIndex.First][randIndex.Second];
+            }
         }
-        go.transform.SetParent(transform);
+        
+        go.SetActive(true);
         go.transform.position = Vector3.forward * spawnZ;
-        spawnZ += tileLength;
-        activeTiles.Add(go);
-    }
 
+        spawnZ += tileLength;
+        activeTiles.Enqueue(go);
+    }
+    
     private void DeleteTile()
     {
-        Destroy(activeTiles[0]);
-        activeTiles.RemoveAt(0);
+        GameObject popped = activeTiles.Dequeue();
+        popped.SetActive(false);
     }
 
-    private int randomPrefabIndex()
+    private Pair<int, int> GetRandomIndex()
     {
-        if (tilePrefabs.Length <= 1)
-        {
-            return 0;
-        }
+        int collectionIndex = 0, elementIndex;
+        int rand = Random.Range(1, 100);
 
-        int randomIndex = lastPrefabIndex;
-        while (randomIndex == lastPrefabIndex)
+        // Pick the index amoung the probabilities intervals
+        for (int ind = 0; ind < probTreshold.Length; ind ++)
         {
-            randomIndex = Random.Range(0, tilePrefabs.Length);
+            if(rand  <= probTreshold[ind])
+            {
+                collectionIndex = ind;
+                break;
+            }
         }
-        lastPrefabIndex = randomIndex;
-        return randomIndex;
+        elementIndex = Random.Range(1, allTiles[collectionIndex].Count) - 1;
+        
+        return new Pair<int, int>(collectionIndex, elementIndex);
     }
+
+    private void DeactivateList(List<GameObject> objectList)
+    {
+        foreach (GameObject go in objectList)
+        {
+            go.SetActive(false);
+            go.transform.SetParent(transform);
+        }
+    }
+
+    private void InitiateTiles()
+    {
+        int index = 0;
+        allTiles.Add(new List<GameObject>());
+        foreach (GameObject go in noRewardRoads)
+        {
+            allTiles[index].Add(Instantiate(go));
+        }
+        DeactivateList(allTiles[index]);
+
+        index += 1;
+        allTiles.Add(new List<GameObject>());
+        foreach (GameObject go in rewardRoads)
+        {
+            allTiles[index].Add(Instantiate(go));
+        }
+        DeactivateList(allTiles[index]);
+
+        index += 1;
+        allTiles.Add(new List<GameObject>());
+        foreach (GameObject go in multiRewardRoads)
+        {
+            allTiles[index].Add(Instantiate(go));
+        }
+        DeactivateList(allTiles[index]);
+
+        index += 1;
+        allTiles.Add(new List<GameObject>());
+        foreach (GameObject go in perkRoads)
+        {
+            allTiles[index].Add(Instantiate(go));
+        }
+        DeactivateList(allTiles[index]);
+    }
+
+}
+
+public class Pair<T, U>
+{
+    public T First { get; set; }
+    public U Second { get; set; }
+
+    public Pair() {}
+
+    public Pair(T first, U second)
+    {
+        this.First = first;
+        this.Second = second;
+    }
+
 }

@@ -82,7 +82,6 @@
     <Compile Include="Assets\OurScripts\Sound.cs" />
     <Compile Include="Assets\OurScripts\SoundOnOff.cs" />
     <Compile Include="Assets\OurScripts\TileManager.cs" />
-    <Compile Include="Assets\OurScripts\TilePoolManager.cs" />
     <Compile Include="Assets\Run.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />

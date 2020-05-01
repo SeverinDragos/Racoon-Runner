@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class ObstacleCollider : MonoBehaviour
 {
-    private string gameOverScene = "GameOver";
+    private string gameOverScene = "End";
 
     public bool isInvinciblePerkActive = false;
 

@@ -12,9 +12,9 @@ public class GameOverPanel : MonoBehaviour
 
     public Button menuButton;
     
-    private string gameScene = "SampleScene";
-
+    private string gameScene = "Game";
     private string menuScene = "Menu";
+
     private void Awake()
     {
         int scoreValue = PlayerPrefs.GetInt("Score");

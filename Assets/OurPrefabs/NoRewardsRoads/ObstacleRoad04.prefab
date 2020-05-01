@@ -102,5 +102,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ObstacleRoad04
       objectReference: {fileID: 0}
+    - target: {fileID: 6222840625487111580, guid: 622117414017c0846a87007def2d3ce9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 622117414017c0846a87007def2d3ce9, type: 3}
