@@ -47,6 +47,9 @@ Andrei a realizat animatiile de la power-up-uri si interactiunea ratonului cu re
 
 # Referinte
 (1) https://assetstore.unity.com/packages/essentials/tutorial-projects/endless-runner-sample-game-87901 
+
 (2) https://www.raywenderlich.com/847-object-pooling-in-unity
+
 (3) https://www.youtube.com/watch?v=7jdL5538bEo&list=PLLH3mUGkfFCXps_IYvtPcE9vcvqmGMpRK 
+
 (4) https://www.youtube.com/watch?v=6OT43pvUyfY
