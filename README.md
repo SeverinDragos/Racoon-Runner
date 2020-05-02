@@ -12,6 +12,7 @@ Jucatorul trebuie sa ocoleasca obstacolele, care sunt de doua tipuri: bariere sa
 Scorul este proportional numarul de stelute culese.
 
 In timpul jocului, se poate profita de power-up-urile dispuse de-a lungul hartii. Acestea sunt:
+
     • un reward care creste scorul cu 10 puncte
 
     • un perk care dubleaza scorul oferit de stele pentru urmatoarele 10 secunde
