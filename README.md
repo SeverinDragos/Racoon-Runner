@@ -1,5 +1,7 @@
 ## Racoon Runner
 
+Build can be found [here](https://github.com/andreeapanait99/racoon-runner-build)
+
 # Descriere
 
 Raccoon Run este un joc 3D care ruleaza la nesfarsit, in care personajul principal este un raton. Jucatorul controleaza ratonul care alearga, scopul fiind de a evita obstacolele.
