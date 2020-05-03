@@ -601,6 +601,7 @@ GameObject:
   - component: {fileID: 9025865165073888603}
   - component: {fileID: 9025865165074888603}
   - component: {fileID: 9025865163920912282}
+  - component: {fileID: 114203539794024858}
   m_Layer: 0
   m_Name: MixedRoad01
   m_TagString: Untagged
@@ -689,6 +690,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 20.624151, y: 0.14577636, z: 9.000003}
   m_Center: {x: -0.0031423569, y: 0.07055816, z: 0.0000014305115}
+--- !u!114 &114203539794024858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9025865165077145947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fdd6c10aa65e3840b0dc7aabef40c01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tileBits:
+  - {fileID: 70958283029768783}
+  - {fileID: 9144004628779319941}
+  - {fileID: 1779195015486361137}
+  - {fileID: 6956271078800773081}
+  - {fileID: 1189344908440160141}
 --- !u!1 &9144004628779319941
 GameObject:
   m_ObjectHideFlags: 0

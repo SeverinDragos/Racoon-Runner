@@ -1206,8 +1206,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f774bc587d73a26439dc7493e2962ce9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  emptyRoad: {fileID: 4418310893329709289, guid: baf3e9c3e9160c644a4330134c62bcef,
+    type: 3}
   noRewardRoads:
-  - {fileID: 4418310893329709289, guid: baf3e9c3e9160c644a4330134c62bcef, type: 3}
   - {fileID: 6222840625487111580, guid: 622117414017c0846a87007def2d3ce9, type: 3}
   - {fileID: 2773465480880568844, guid: 237f6af2c6169f24f8fa6dcbc9778d43, type: 3}
   - {fileID: 2773465480880568844, guid: 2fab89da569020b44bfdf346218b0588, type: 3}

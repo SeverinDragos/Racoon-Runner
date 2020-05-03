@@ -227,6 +227,16 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 4267117244398101171, guid: 622117414017c0846a87007def2d3ce9,
+        type: 3}
+      propertyPath: tileBits.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4267117244398101171, guid: 622117414017c0846a87007def2d3ce9,
+        type: 3}
+      propertyPath: tileBits.Array.data[2]
+      value: 
+      objectReference: {fileID: 3273754764347243675}
     - target: {fileID: 4929828245244213904, guid: 622117414017c0846a87007def2d3ce9,
         type: 3}
       propertyPath: m_RootOrder

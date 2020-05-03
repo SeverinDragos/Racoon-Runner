@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 149214292259015515}
+  - component: {fileID: 1381566504191418991}
   m_Layer: 0
   m_Name: EmptyRoad
   m_TagString: Untagged
@@ -31,6 +32,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1381566504191418991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4418310893329709289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fdd6c10aa65e3840b0dc7aabef40c01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tileBits: []
 --- !u!1001 &6174137305176232464
 PrefabInstance:
   m_ObjectHideFlags: 0

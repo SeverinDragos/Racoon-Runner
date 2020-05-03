@@ -227,6 +227,26 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 4267117244398101171, guid: 622117414017c0846a87007def2d3ce9,
+        type: 3}
+      propertyPath: tileBits.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4267117244398101171, guid: 622117414017c0846a87007def2d3ce9,
+        type: 3}
+      propertyPath: tileBits.Array.data[2]
+      value: 
+      objectReference: {fileID: 6477470848602701085}
+    - target: {fileID: 4267117244398101171, guid: 622117414017c0846a87007def2d3ce9,
+        type: 3}
+      propertyPath: tileBits.Array.data[0]
+      value: 
+      objectReference: {fileID: 4995409139318957292}
+    - target: {fileID: 4267117244398101171, guid: 622117414017c0846a87007def2d3ce9,
+        type: 3}
+      propertyPath: tileBits.Array.data[1]
+      value: 
+      objectReference: {fileID: 792874268541902317}
     - target: {fileID: 4929828245244213904, guid: 622117414017c0846a87007def2d3ce9,
         type: 3}
       propertyPath: m_RootOrder
@@ -262,6 +282,18 @@ PrefabInstance:
 --- !u!4 &6501755953041115704 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3034383993521493416, guid: 622117414017c0846a87007def2d3ce9,
+    type: 3}
+  m_PrefabInstance: {fileID: 8081336509660585872}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4995409139318957292 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3852247393297660796, guid: 622117414017c0846a87007def2d3ce9,
+    type: 3}
+  m_PrefabInstance: {fileID: 8081336509660585872}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &792874268541902317 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8873910199187538557, guid: 622117414017c0846a87007def2d3ce9,
     type: 3}
   m_PrefabInstance: {fileID: 8081336509660585872}
   m_PrefabAsset: {fileID: 0}

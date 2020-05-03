@@ -35,6 +35,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3034383993521493416}
+  - component: {fileID: 4267117244398101171}
   m_Layer: 0
   m_Name: ObstacleRoad01
   m_TagString: Untagged
@@ -62,6 +63,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4267117244398101171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6222840625487111580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fdd6c10aa65e3840b0dc7aabef40c01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tileBits:
+  - {fileID: 8873910199187538557}
+  - {fileID: 3852247393297660796}
 --- !u!1 &8873910199187538557
 GameObject:
   m_ObjectHideFlags: 0

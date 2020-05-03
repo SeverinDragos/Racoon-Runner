@@ -14,6 +14,7 @@ public class TileManager : MonoBehaviour
     };
 
     // Tiles lists filled from within Unity
+    public GameObject emptyRoad;
     public GameObject[] noRewardRoads;
     public GameObject[] rewardRoads;
     public GameObject[] multiRewardRoads;
@@ -78,7 +79,7 @@ public class TileManager : MonoBehaviour
         GameObject go;
         if(emptyTile)
         {
-            go = Instantiate(noRewardRoads[0]) as GameObject;
+            go = Instantiate(emptyRoad) as GameObject;
             go.transform.SetParent(transform);
         }
         else
@@ -91,18 +92,32 @@ public class TileManager : MonoBehaviour
                 go = allTiles[randIndex.First][randIndex.Second];
             }
         }
-        
-        go.SetActive(true);
+
+        Enabling(go, true);
         go.transform.position = Vector3.forward * spawnZ;
 
         spawnZ += tileLength;
         activeTiles.Enqueue(go);
     }
+
+    private void Enabling(GameObject obj, bool enable)
+    {
+        TileEnablerer enablerer = obj.GetComponent<TileEnablerer>();
+        if(enable)
+        {
+            enablerer.Enable();
+        }
+        else
+        {
+            enablerer.Disable();
+        }
+    }
+
     
     private void DeleteTile()
     {
         GameObject popped = activeTiles.Dequeue();
-        popped.SetActive(false);
+        Enabling(popped, false);
     }
 
     private Pair<int, int> GetRandomIndex()
@@ -128,7 +143,7 @@ public class TileManager : MonoBehaviour
     {
         foreach (GameObject go in objectList)
         {
-            go.SetActive(false);
+            Enabling(go, false);
             go.transform.SetParent(transform);
         }
     }
